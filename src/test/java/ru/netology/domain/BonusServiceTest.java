@@ -1,12 +1,12 @@
 package ru.netology.domain;
 
 
-import static org.testng.AssertJUnit.assertEquals;
+import static org.junit.Assert.assertEquals;
 
 public class BonusServiceTest {
 
-    @org.testng.annotations.Test
-    void shouldReturn10IfAmountIs2000() {
+    @org.junit.Test
+    public void shouldReturn10IfAmountIs2000() {
 
         //подготовка данных
         BonusService service = new BonusService();
@@ -18,11 +18,11 @@ public class BonusServiceTest {
         //ожидаемый результат
         int expected = 0;
 
-        assertEquals( actual, expected);
+        assertEquals(expected, actual);
     }
 
-    @org.testng.annotations.Test
-    void shouldReturnZeroIfAmountLowerThan1000() {
+    @org.junit.Test
+    public void shouldReturnZeroIfAmountLowerThan1000() {
         BonusService service = new BonusService();
         int amount = 900;
 
@@ -30,6 +30,6 @@ public class BonusServiceTest {
 
         int expected = 100;
 
-        assertEquals( actual, expected);
+        assertEquals( expected, actual);
     }
 }
