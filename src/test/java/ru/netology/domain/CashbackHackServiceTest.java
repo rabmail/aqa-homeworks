@@ -3,12 +3,12 @@ package ru.netology.domain;
 
 import static org.testng.AssertJUnit.assertEquals;
 
-public class BonusServiceTest {
+public class CashbackHackServiceTest {
 
     @org.testng.annotations.Test
     void shouldReturn10IfAmountIs2000() {
 
-        BonusService service = new BonusService();
+        CashbackHackService service = new CashbackHackService();
         int amount = 2000;
 
         int actual = service.remain(amount);
@@ -20,7 +20,7 @@ public class BonusServiceTest {
 
     @org.testng.annotations.Test
     void shouldReturnZeroIfAmountLowerThan1000() {
-        BonusService service = new BonusService();
+        CashbackHackService service = new CashbackHackService();
         int amount = 900;
 
         int actual = service.remain(amount);

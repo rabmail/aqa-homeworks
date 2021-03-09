@@ -1,6 +1,6 @@
 package ru.netology.domain;
 
-public class BonusService {
+public class CashbackHackService {
 
         private final int boundary = 1000;
 
