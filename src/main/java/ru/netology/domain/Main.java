@@ -2,7 +2,7 @@ package ru.netology.domain;
 
 public class Main {
     public static void main(String[] args) {
-        BonusService service = new BonusService();
+        CashbackHackService service = new CashbackHackService();
         {
             System.out.println("It should return 0 for 1000");
             int result = service.remain(1000);
