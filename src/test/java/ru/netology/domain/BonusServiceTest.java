@@ -8,14 +8,11 @@ public class BonusServiceTest {
     @org.testng.annotations.Test
     void shouldReturn10IfAmountIs2000() {
 
-        //подготовка данных
         BonusService service = new BonusService();
         int amount = 2000;
 
-        //выполняемое действие
         int actual = service.remain(amount);
 
-        //ожидаемый результат
         int expected = 0;
 
         assertEquals( actual, expected);
